@@ -54,7 +54,9 @@ const DisplayInfoPage = ({ formData }) => {
         </Grid>
         <Grid item xs={12} md={6} className={classes.qrCodeContainer}>
           <Box className={classes.qrCode}>
-            <QRCode value={`http://localhost:3000/profile/${formData?._id}`} />
+            <QRCode
+              value={`https://user-info-nextjs.vercel.app/profile/${formData?._id}`}
+            />
           </Box>
         </Grid>
       </Grid>
